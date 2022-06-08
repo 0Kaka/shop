@@ -1,0 +1,84 @@
+/* pages/home/home.wxss */
+.banner swiper{
+    width: 100%;
+    height: 300rpx;
+
+}
+.banner image{
+    width: 100%;
+    height: 500rpx;
+}
+.category{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+}
+.category image{
+    width: 80rpx;
+    height: 80rpx;
+    margin-top: 30rpx;
+}
+.item{
+    width: 25%;
+    text-align: center;
+    margin-bottom: 30rpx;
+}
+.item text{
+    display: block;
+}
+.shopping{
+    height: 100rpx;
+    background-color: white;
+    line-height: 100rpx;
+    margin-top: 20rpx;
+    font-size: 36rpx;
+    text-indent: 1em;
+}
+
+.goodslist{
+    display: flex;
+    padding:20rpx 0px;
+    background-color: #fff;
+    margin-bottom: 2rpx;
+}
+.goodslist .left{
+    width: 240rpx;
+    text-align: center;
+}
+.goodslist .left image{
+    width: 200rpx;
+    height: 200rpx;
+}
+.goodslist .right{
+    flex:1;
+    position: relative;
+}
+.goodslist .right image{
+    width: 44rpx;
+    height: 44rpx;
+}
+
+.goodslist .right .goods_name{
+    font-size: 27rpx;
+    color:black;
+    height: 73rpx;
+    line-height: 40rpx;
+    /* 溢出隐藏 */
+    overflow: hidden;
+}
+.goodslist .right .goods_place{
+    margin-top: 60rpx;
+    font-size: 24rpx;
+    color:#929292;
+    text-indent: 1em;
+}
+.goodslist .right .goods_price{
+    font-size: 30rpx;
+    color:red;
+}
+
+.goodslist .right .car{
+    position: absolute;
+    right:20rpx;
+    bottom: 0px;
+}

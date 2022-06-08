@@ -1,0 +1,33 @@
+/* pages/my/my.wxss */
+.info image{
+    width: 170rpx;
+    height: 170rpx;
+    border-radius: 50%;
+}
+.info{
+    padding: 60rpx 0px;
+    text-align: center;
+    background-color: white;
+    margin-bottom: 20rpx;
+}
+.info .nickName{
+    font-size: 30rpx;
+}
+.ul{
+    background-color: white;
+    border-top: 1px solid #e5e5e5;
+}
+.ul .li{
+    height: 90rpx;
+    line-height: 90rpx;
+    border-bottom: 1px solid #e5e5e5;
+    text-indent: 28rpx;
+    position: relative;
+}
+.ul image{
+    width: 26rpx;
+    height: 26rpx;
+    position: absolute;
+    top: 32rpx;
+    right: 30rpx;
+}

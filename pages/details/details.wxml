@@ -1,0 +1,59 @@
+<!--pages/details/details.wxml-->
+<view class="banner">
+<swiper indicator-dots="true" indicator-color="#CCC" indicator-active-color="#007AAE" autoplay="ture">
+    <swiper-item wx:for="{{goods.goodsImgs}}">
+        <image mode="widthFix" src="{{item}}"></image>
+    </swiper-item>
+</swiper>
+</view>
+<view class="goods_info">
+    <view class="goods_title" catchtap="setCollect">
+        <view class="title">
+        {{goods.goodsName}}
+        </view>
+        <view class="collect"  wx:if="{{collect}}" bindtap="setcollect">
+            <image src="/images/icon-aixin.png" ></image>
+            <text>收藏</text>
+        </view>
+        <view class="collect" wx:else="" bindtap="setcollect">
+            <image src="/images/icon-aixin1.png" bindtap="delcollect"></image>
+            <text>未收藏</text>
+        </view>
+    </view>
+    <view class="goods_price">
+        <text>￥{{goods.goodsPrice}}</text>
+        <text class="old">￥{{goods.goodsPriceold}}</text>
+    </view>
+    <view class="bottom">
+        *本产品由 品牌商发货
+    </view>
+</view>
+<!-- 商品详情 -->
+<view class="content">
+    <view class="title">商品详情</view>
+    <!-- <image src="{{goods.goodsDetails}}" mode="widthFix"></image>
+     -->
+     <view class="detail">
+     <rich-text nodes="{{goods.goodsDetails}}"></rich-text>
+     </view>
+</view>
+<!-- 底部 -->
+<view class="bottomNav">
+    <view class="ul">
+    <view class="li">
+    <view class="cart" bindtap="toCar">
+        <image src="/images/car.png" ></image>
+        <view class="num">{{num}}</view>
+    </view>
+    </view>
+        <view class="li" bindtap="toHome">
+            前往商城
+        </view>
+        <view class="li" bindtap="setCarData">
+            加入购物车
+        </view>
+        <view class="li" >
+            前往支付
+        </view>
+    </view>
+</view>

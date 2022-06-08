@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/details/details",
+    "pages/category/category",
+    "pages/categorylist/categorylist",
+    "pages/my/my",
+    "pages/collect/collect",
+    "pages/car/car",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "商城小程序",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#ccc",
+    "borderStyle": "black",
+    "selectedColor": "#77c8b2",
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "首页",
+      "iconPath": "/images/shouye1.png",
+      "selectedIconPath": "/images/shouye.png"
+    },{
+      "pagePath": "pages/category/category",
+      "text": "分类",
+      "iconPath": "/images/huodong1.png",
+      "selectedIconPath": "/images/huodong.png"
+    },{
+      "pagePath": "pages/car/car",
+      "text": "购物车",
+      "iconPath": "/images/car1.png",
+      "selectedIconPath": "/images/car.png"
+    },{
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "/images/wode1.png",
+        "selectedIconPath": "/images/wode.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

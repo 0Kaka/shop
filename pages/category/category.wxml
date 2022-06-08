@@ -1,0 +1,18 @@
+<!--pages/category/category.wxml-->
+<scroll-view scroll-y="true" class="categoryItem">
+    <view class="item" wx:for="{{categoryItem}}" wx:key="*this">
+       <view class="{{index==num?'con':''}}" bindtap="setNum" data-index="{{index}}">{{item}}</view>
+    </view>
+</scroll-view>
+<!-- 右侧商品列表滑块功能 -->
+<scroll-view scroll-y="true"  class="contentltem">
+    <view class="content">
+    <view class="h1" wx:for="{{daohang[num]}}">{{item.text}}</view>
+        <view class="ul">
+            <navigator class="li" url="/pages/categorylist/categorylist?cid={{item.id}}" wx:for="{{categorys[num].children}}" wx:key="*this">
+                <image src="{{item.pic}}"></image>
+                <text>{{item.cate_name}}</text>
+            </navigator>
+        </view>
+    </view>
+</scroll-view>

@@ -1,0 +1,68 @@
+/* pages/category/category.wxss */
+.categoryItem{
+    width: 25%;
+    height: 100vh;
+    float: left;
+    background-color: #87e2ca;
+
+}
+
+.categoryItem .item view{
+    font-size: 36rpx;
+    text-align: center;
+    height: 100rpx;
+    line-height: 100rpx;
+    position: relative;
+    color: #057a5b;
+}
+.categoryItem .item view.con{
+    background-color: white;
+    color: #036349;
+    font-weight: 900;
+}
+.categoryItem .item view.con::after{
+    content: "";
+    display: block;
+    width: 6rpx;
+    height: 40rpx;
+    background-color: #036349;
+    position: absolute;
+    top: 30rpx;
+}
+.contentltem{
+    float: right;
+    width: 75%;
+    height: 100vh;
+}
+.contentltem .li image{
+    width: 120rpx;
+    height: 120rpx;
+}
+.contentltem .content{
+    width: 100%;
+}
+.contentltem .h1{
+    text-align: center;
+    background-color: white;
+    height: 100rpx;
+    line-height: 100rpx;
+    font-size: 36rpx;
+}
+.contentltem .ul{
+    display: flex;
+    width: 70vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 20rpx;
+    margin: auto;
+}
+.contentltem .ul .li{
+    width: 33.3%;
+    text-align: center;
+    margin: 10rpx 0rpx;
+}
+
+.contentltem .ul .li text{
+    display: block;
+    text-align: center;
+}
